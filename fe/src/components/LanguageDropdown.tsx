@@ -8,7 +8,6 @@ import { useLanguageStore } from '@/store/languageStore';
 import { useTranslation } from 'react-i18next';
 import UnitedKingdomIcon from '@/assets/icons/united-kingdom.png';
 import RomaniaIcon from '@/assets/icons/romania.png';
-import { Button } from '@/components/ui/button';
 
 interface LanguageDropdownProps {
   code: string;
