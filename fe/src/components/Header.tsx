@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageDropdown from '@/components/LanguageDropdown';
 
 import en from '@/locales/en/en.json';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 export default function Header() {
   const { t } = useTranslation();
@@ -28,13 +29,17 @@ export default function Header() {
   ];
 
   return (
-    <div className='flex h-16 w-full border-b'>
+    <div className='flex w-full border-b py-5'>
       <div className='container flex h-full w-full items-center justify-between'>
-        <div></div>
+        <div>
+          <Avatar className='h-20 w-20'>
+            <AvatarFallback className='bg-gray-300'>Logo</AvatarFallback>
+          </Avatar>
+        </div>
         <div className='flex gap-5'>
           <div className='flex gap-3'>
             {links.map((link) => (
-              <Link to={link.path} key={link.title} className='flex'>
+              <Link to={link.path} key={link.title} className='flex text-lg'>
                 {link.title}
               </Link>
             ))}
