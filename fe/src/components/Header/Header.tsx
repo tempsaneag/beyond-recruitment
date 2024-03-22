@@ -1,5 +1,3 @@
-import LanguageDropdown from '@/components/LanguageDropdown';
-
 import HeaderContact from '@/components/Header/HeaderContact';
 import HeaderLogo from '@/components/Header/HeaderLogo';
 import HeaderNavigationLinks from '@/components/Header/HeaderNavigationLinks';
@@ -12,7 +10,6 @@ export default function Header() {
         <HeaderLogo />
         <div className='flex items-center gap-5'>
           <HeaderNavigationLinks />
-          <LanguageDropdown />
         </div>
       </div>
     </div>
