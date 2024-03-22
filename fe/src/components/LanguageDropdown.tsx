@@ -40,7 +40,7 @@ export default function LanguageDropdown() {
   const currentLanguage = languages.find((lang) => lang.code === language);
 
   return (
-    <>
+    <div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <img
@@ -69,6 +69,6 @@ export default function LanguageDropdown() {
           ))}
         </DropdownMenuContent>
       </DropdownMenu>
-    </>
+    </div>
   );
 }
