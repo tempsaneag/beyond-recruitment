@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import en from '@/locales/en/en.json';
+import header from '@/locales/en/header.json';
 import { Link } from 'react-router-dom';
 
 export default function HeaderNavigationLinks() {
@@ -8,19 +8,19 @@ export default function HeaderNavigationLinks() {
 
   const links = [
     {
-      title: t(en.Home),
+      title: t(header.Home),
       path: '/',
     },
     {
-      title: t(en['Who we are']),
+      title: t(header['Who we are']),
       path: '#about',
     },
     {
-      title: t(en.Services),
+      title: t(header.Services),
       path: '#services',
     },
     {
-      title: t(en.Contact),
+      title: t(header.Contact),
       path: '#contact',
     },
   ];
