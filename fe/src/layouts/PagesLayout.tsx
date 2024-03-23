@@ -3,9 +3,10 @@ import { useSwipeable } from 'react-swipeable';
 import { useToast } from '@/components/ui/use-toast';
 import { pageLinks } from '@/constants/pageLinks';
 import { usePreventSwipeStore } from '@/store/preventSwipeStore';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
+import { debounce } from 'lodash';
 
 export default function PagesLayout({
   children,
@@ -68,12 +69,16 @@ export default function PagesLayout({
     navigate(pageLinks[nextIndex].path);
   };
 
+  const debouncedSwipeRight = useMemo(
+    () => debounce(handleSwipeRight, 100),
+    []
+  );
+  const debouncedSwipeLeft = useMemo(() => debounce(handleSwipeLeft, 100), []);
+
   const handlers = useSwipeable({
-    onSwipedLeft: handleSwipeLeft,
-    onSwipedRight: handleSwipeRight,
-    swipeDuration: 500,
+    onSwipedLeft: debouncedSwipeLeft,
+    onSwipedRight: debouncedSwipeRight,
     preventScrollOnSwipe: true,
-    trackMouse: true,
   });
 
   return (
