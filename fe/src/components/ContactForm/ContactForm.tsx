@@ -11,8 +11,13 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useMutation } from '@tanstack/react-query';
 import axiosInstance from '@/utils/axios.service';
 import { useToast } from '@/components/ui/use-toast';
+import { usePreventSwipeStore } from '@/store/preventSwipeStore';
+import { useEffect } from 'react';
 
 export default function ContactForm() {
+  const setPreventSwipe = usePreventSwipeStore(
+    (state) => state.setPreventSwipe
+  );
   const { toast } = useToast();
 
   const form = useForm<ContactFormSchema>({
@@ -49,6 +54,16 @@ export default function ContactForm() {
   const handleSubmit = async (data: ContactFormSchema) => {
     mutation.mutate(data);
   };
+
+  useEffect(() => {
+    if (form.formState.isDirty || form.formState.isSubmitting) {
+      setPreventSwipe(true);
+    }
+
+    return () => {
+      setPreventSwipe(false);
+    };
+  }, [form.formState]);
 
   return (
     <FormProvider {...form}>
