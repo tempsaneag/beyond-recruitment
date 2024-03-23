@@ -7,6 +7,7 @@ export default function Excellence() {
       initial={{ transform: 'translateX(100%)' }}
       animate={{ transform: 'translateX(0)' }}
       exit={{ transform: 'translateX(-100%)' }}
+      className='flex flex-1 flex-col'
     >
       <PagesLayout>
         <p className='whitespace-nowrap text-nowrap text-4xl font-semibold'>

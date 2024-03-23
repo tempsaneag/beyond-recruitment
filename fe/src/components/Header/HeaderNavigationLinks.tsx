@@ -32,14 +32,20 @@ export default function HeaderNavigationLinks() {
     },
   ];
 
+  const navLinkClassName =
+    'flex text-xl font-semibold transition-colors duration-300 hover:text-blue-600';
+
   return (
     <div className='flex gap-3'>
       {links.map((link) => (
         <NavLink
           to={link.path}
           key={link.title}
-          className='flex text-xl font-semibold 
-          transition-colors duration-300 hover:text-blue-600'
+          className={({ isActive }) =>
+            isActive
+              ? `underline underline-offset-4 ${navLinkClassName}`
+              : `${navLinkClassName}`
+          }
         >
           {link.title}
         </NavLink>

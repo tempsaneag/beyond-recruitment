@@ -2,7 +2,7 @@ import { Mail, Phone } from 'lucide-react';
 
 export default function HeaderContact() {
   return (
-    <div className='container flex justify-end gap-5 pt-2'>
+    <div className='container flex flex-wrap justify-end gap-5 pt-2 text-sm'>
       <a
         href='mailto:example@example.com'
         className='group flex items-center gap-2'
