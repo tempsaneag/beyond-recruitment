@@ -4,11 +4,11 @@ import HeaderNavigationLinks from '@/components/Header/HeaderNavigationLinks';
 
 export default function Header() {
   return (
-    <div className='flex w-full flex-col border-b'>
+    <div className='relative z-10 flex h-[140px] w-full flex-col border-b'>
       <HeaderContact />
       <div className='container flex h-full w-full items-center justify-between pb-5 pt-1'>
         <HeaderLogo />
-        <div className='flex items-center gap-5'>
+        <div className='flex items-center gap-5 max-md:hidden'>
           <HeaderNavigationLinks />
         </div>
       </div>
