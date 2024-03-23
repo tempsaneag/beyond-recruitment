@@ -10,9 +10,7 @@ export default function WhoWeAre() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='whitespace-nowrap text-nowrap text-4xl font-semibold'>
-          Who we are
-        </p>
+        <p className='text-4xl font-semibold'>Who we are</p>
       </PagesLayout>
     </motion.div>
   );

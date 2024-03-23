@@ -10,9 +10,7 @@ export default function Services() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='whitespace-nowrap text-nowrap text-4xl font-semibold'>
-          Services
-        </p>
+        <p className='text-4xl font-semibold'>Services</p>
       </PagesLayout>
     </motion.div>
   );

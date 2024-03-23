@@ -7,7 +7,7 @@ export default function Home() {
       initial={{ transform: 'translateX(100%)' }}
       animate={{ transform: 'translateX(0)' }}
       exit={{ transform: 'translateX(-100%)' }}
-      className="flex flex-1 flex-col bg-[url('/public/images/shaking_hands.png')] 
+      className="flex flex-1 flex-col bg-[url('/images/shaking_hands.png')] 
       bg-cover bg-center bg-no-repeat"
     >
       <PagesLayout>

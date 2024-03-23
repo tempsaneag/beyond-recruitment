@@ -10,9 +10,7 @@ export default function Team() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='whitespace-nowrap text-nowrap text-4xl font-semibold'>
-          Team
-        </p>
+        <p className='text-4xl font-semibold'>Team</p>
       </PagesLayout>
     </motion.div>
   );

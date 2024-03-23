@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm/ContactForm';
 import PagesLayout from '@/layouts/PagesLayout';
 import { motion } from 'framer-motion';
 
@@ -10,9 +11,10 @@ export default function Contact() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='whitespace-nowrap text-nowrap text-4xl font-semibold'>
-          Contact
-        </p>
+        <div className='flex w-full flex-col items-center'>
+          <p className='text-4xl font-semibold'>Contact</p>
+          <ContactForm />
+        </div>
       </PagesLayout>
     </motion.div>
   );

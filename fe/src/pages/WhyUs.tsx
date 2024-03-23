@@ -10,9 +10,7 @@ export default function WhyUs() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='whitespace-nowrap text-nowrap text-4xl font-semibold'>
-          Why us
-        </p>
+        <p className='text-4xl font-semibold'>Why us</p>
       </PagesLayout>
     </motion.div>
   );
