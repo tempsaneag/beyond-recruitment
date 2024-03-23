@@ -13,6 +13,7 @@ import axiosInstance from '@/utils/axios.service';
 import { useToast } from '@/components/ui/use-toast';
 import { usePreventSwipeStore } from '@/store/preventSwipeStore';
 import { useEffect } from 'react';
+import { Loader2 } from 'lucide-react';
 
 export default function ContactForm() {
   const setPreventSwipe = usePreventSwipeStore(
@@ -100,7 +101,13 @@ export default function ContactForm() {
             placeholder='Enter message text'
           />
           <div className='flex justify-center'>
-            <Button>Send Message</Button>
+            <Button disabled={mutation.isPending}>
+              {mutation.isPending ? (
+                <Loader2 className='size-8 animate-spin' />
+              ) : (
+                'Send Message'
+              )}
+            </Button>
           </div>
         </form>
       </Form>

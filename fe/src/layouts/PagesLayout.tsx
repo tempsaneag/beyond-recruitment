@@ -1,8 +1,10 @@
 import { useSwipeable } from 'react-swipeable';
 
+import { useToast } from '@/components/ui/use-toast';
 import { pageLinks } from '@/constants/pageLinks';
-import { useLocation, useNavigate } from 'react-router-dom';
 import { usePreventSwipeStore } from '@/store/preventSwipeStore';
+import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function PagesLayout({
   children,
@@ -12,9 +14,23 @@ export default function PagesLayout({
   const navigate = useNavigate();
   const location = useLocation();
   const preventSwipe = usePreventSwipeStore((state) => state.preventSwipe);
+  const { toast } = useToast();
+
+  const [counter, setCounter] = useState(0);
 
   const handleSwipeRight = () => {
-    if (preventSwipe) return;
+    if (preventSwipe) {
+      setCounter((prev) => prev + 1);
+      if (counter >= 2) {
+        toast({
+          description:
+            'If you want to leave contact page, submit or reset the form',
+          className: 'bg-blue-500 text-white border-0',
+        });
+        setCounter(0);
+      }
+      return;
+    }
     const currentIndex = pageLinks.findIndex(
       (link) => link.path === location.pathname
     );
@@ -27,7 +43,18 @@ export default function PagesLayout({
   };
 
   const handleSwipeLeft = () => {
-    if (preventSwipe) return;
+    if (preventSwipe) {
+      setCounter((prev) => prev + 1);
+      if (counter >= 2) {
+        toast({
+          description:
+            'If you want to leave contact page, submit or reset the form',
+          className: 'bg-blue-500 text-white border-0',
+        });
+        setCounter(0);
+      }
+      return;
+    }
     const currentIndex = pageLinks.findIndex(
       (link) => link.path === location.pathname
     );
