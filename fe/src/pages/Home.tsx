@@ -12,7 +12,7 @@ export default function Home() {
       <PagesLayout>
         <div>
           <div className='text-center'>
-            <p className='text-4xl font-semibold'>Beyond Recruitment</p>
+            <p className='text-6xl font-semibold'>Beyond Recruitment</p>
             <p className='text-2xl font-semibold'>
               Tech Talent & Executive Research
             </p>
@@ -22,7 +22,7 @@ export default function Home() {
               At Beyond Recruitment, we go beyond traditional recruitment
               services, offering something innovative and exceptional.
             </p>
-            <p className='text-center text-2xl font-bold'>
+            <p className='mx-auto max-w-xl text-center text-2xl font-bold'>
               Our mission is clear: to fulfill our client's needs with precision
               and care.
             </p>
