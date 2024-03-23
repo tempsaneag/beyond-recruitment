@@ -10,7 +10,7 @@ export default function Header() {
       </div>
       <div className='container flex h-full w-full items-center justify-between pb-2'>
         <HeaderLogo />
-        <div className='flex items-center gap-5 max-md:hidden'>
+        <div className='flex items-center gap-5'>
           <HeaderNavigationLinks />
         </div>
       </div>

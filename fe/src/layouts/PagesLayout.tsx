@@ -15,9 +15,7 @@ export default function PagesLayout({
   const navigate = useNavigate();
   const location = useLocation();
   const preventSwipe = usePreventSwipeStore((state) => state.preventSwipe);
-  const { swipeDirection, setSwipeDirection } = usePageTransitionStore(
-    (state) => state
-  );
+  const { setSwipeDirection } = usePageTransitionStore((state) => state);
   const { toast } = useToast();
 
   const [counter, setCounter] = useState(0);
