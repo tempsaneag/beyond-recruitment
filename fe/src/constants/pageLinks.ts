@@ -1,4 +1,6 @@
-export const pageLinks = [
+import { PageLinkType } from '@/types/PageLinksType';
+
+export const pageLinks: PageLinkType[] = [
   {
     title: 'Home',
     path: '/',
