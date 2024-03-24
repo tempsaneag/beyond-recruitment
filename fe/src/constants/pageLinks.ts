@@ -12,28 +12,13 @@ export const pageLinks: PageLinkType[] = [
     index: 1,
   },
   {
-    title: 'Excellence',
-    path: '/excellence',
-    index: 2,
-  },
-  {
     title: 'Services',
     path: '/services',
-    index: 3,
-  },
-  {
-    title: 'Why us',
-    path: '/why-us',
-    index: 4,
-  },
-  {
-    title: 'Team',
-    path: '/team',
-    index: 5,
+    index: 2,
   },
   {
     title: 'Contact',
     path: '/contact',
-    index: 6,
+    index: 3,
   },
 ];

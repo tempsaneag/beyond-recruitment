@@ -38,7 +38,7 @@ export default function HeaderNavigationLinks() {
 
   return (
     <div>
-      <div className='flex gap-5 max-lg:hidden'>
+      <div className='flex gap-5 max-sm:hidden'>
         {pageLinks.map((link) => (
           <NavLink
             to={link.path}
@@ -54,7 +54,7 @@ export default function HeaderNavigationLinks() {
           </NavLink>
         ))}
       </div>
-      <div className='lg:hidden'>
+      <div className='sm:hidden'>
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Menu className='size-10' />

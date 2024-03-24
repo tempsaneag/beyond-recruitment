@@ -78,6 +78,7 @@ export default function PagesLayout({
   const handlers = useSwipeable({
     onSwipedLeft: debouncedSwipeLeft,
     onSwipedRight: debouncedSwipeRight,
+    delta: 50,
     preventScrollOnSwipe: true,
   });
 
