@@ -11,10 +11,6 @@ export default function MainSection() {
           <p className='text-2xl font-semibold'>
             Tech Talent & Executive Research
           </p>
-          <p className='mx-auto mt-5 max-w-2xl text-left text-2xl font-semibold'>
-            Our mission is clear: to fulfill our client's needs with precision
-            and care.
-          </p>
         </div>
         <div className='mx-auto mt-5 max-w-2xl space-y-2'>
           <p>
@@ -31,6 +27,14 @@ export default function MainSection() {
             Moreover, we understand the importance of cost-effectiveness,
             ensuring that our services deliver great value without compromising
             on quality.
+          </p>
+          <p>
+            Trust Beyond Recruitment to go above and beyond, providing
+            innovative solutions and unlocking the potential of your workforce.
+          </p>
+          <p className='mx-auto max-w-2xl pt-5 text-center text-2xl font-semibold'>
+            Our mission is clear: to fulfill our clients' needs with precision
+            and care.
           </p>
         </div>
       </div>
