@@ -29,8 +29,9 @@ export default function MainSection() {
             on quality.
           </p>
           <p>
-            Trust Beyond Recruitment to go above and beyond, providing
-            innovative solutions and unlocking the potential of your workforce.
+            You can count on Beyond Recruitment for exceptional service,
+            offering inventive approaches and unleashing the full potential of
+            your team
           </p>
           <p className='mx-auto max-w-2xl pt-5 text-center text-2xl font-semibold'>
             Our mission is clear: to fulfill our clients' needs with precision
