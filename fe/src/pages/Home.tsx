@@ -1,4 +1,5 @@
 import MainSection from '@/components/Home/MainSection';
+import ServicesSection from '@/components/Home/ServicesSection';
 import StrengthsSection from '@/components/Home/StrengthsSection';
 import PagesLayout from '@/layouts/PagesLayout';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
@@ -31,6 +32,7 @@ export default function Home() {
       <PagesLayout>
         <MainSection />
         <StrengthsSection />
+        <ServicesSection />
       </PagesLayout>
     </motion.div>
   );
