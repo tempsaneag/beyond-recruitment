@@ -20,10 +20,12 @@ export default function StrengthsCard({
   footer,
 }: StrengthsCardProps) {
   return (
-    <Card className='max-w-xs bg-gray-300 transition-all duration-300 hover:bg-gray-700 hover:text-white'>
+    <Card className='group max-w-xs bg-gray-200 transition-all duration-300 hover:bg-gray-700 hover:text-white'>
       <CardHeader>
         <div className='flex flex-col items-center gap-2'>
-          {icon}
+          <div className='transition-transform duration-1000 group-hover:[transform:rotateY(360deg)]'>
+            {icon}
+          </div>
           <span className='text-lg'>{title}</span>
         </div>
       </CardHeader>
