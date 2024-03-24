@@ -28,7 +28,9 @@ export default function WhoWeAre() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='text-4xl font-semibold'>Who we are</p>
+        <div className='min-h-[calc(100vh-130px)]'>
+          <p className='text-4xl font-semibold'>Who we are</p>
+        </div>
       </PagesLayout>
     </motion.div>
   );

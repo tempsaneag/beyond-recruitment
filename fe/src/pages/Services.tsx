@@ -25,10 +25,11 @@ export default function Services() {
       initial={{ transform: getSwipeDirection().initial }}
       animate={{ transform: 'translateX(0)' }}
       exit={{ transform: getSwipeDirection().exit }}
-      className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <p className='text-4xl font-semibold'>Services</p>
+        <div className='min-h-[calc(100vh-130px)]'>
+          <p className='text-4xl font-semibold'>Services</p>
+        </div>
       </PagesLayout>
     </motion.div>
   );

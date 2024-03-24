@@ -29,7 +29,7 @@ export default function Contact() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <div className='flex w-full flex-col items-center'>
+        <div className='container flex w-full flex-col items-center py-10'>
           <p className='text-4xl font-semibold'>Contact</p>
           <ContactForm />
         </div>

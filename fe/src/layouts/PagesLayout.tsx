@@ -19,19 +19,14 @@ export default function PagesLayout({
   const { setSwipeDirection } = usePageTransitionStore((state) => state);
   const { toast } = useToast();
 
-  const [counter, setCounter] = useState(0);
-
   const checkPreventSwipe = () => {
     if (preventSwipe) {
-      setCounter((prev) => prev + 1);
-      if (counter >= 2) {
-        toast({
-          description:
-            'If you want to leave contact page, submit or reset the form',
-          className: 'bg-blue-500 text-white border-0',
-        });
-        setCounter(0);
-      }
+      toast({
+        title: 'You have unsaved changes',
+        description:
+          'If you want to leave contact page, submit or reset the form',
+        className: 'bg-blue-500 text-white border-0',
+      });
       return true;
     }
     return false;
@@ -71,9 +66,12 @@ export default function PagesLayout({
 
   const debouncedSwipeRight = useMemo(
     () => debounce(handleSwipeRight, 100),
-    []
+    [checkPreventSwipe]
   );
-  const debouncedSwipeLeft = useMemo(() => debounce(handleSwipeLeft, 100), []);
+  const debouncedSwipeLeft = useMemo(
+    () => debounce(handleSwipeLeft, 100),
+    [checkPreventSwipe]
+  );
 
   const handlers = useSwipeable({
     onSwipedLeft: debouncedSwipeLeft,
