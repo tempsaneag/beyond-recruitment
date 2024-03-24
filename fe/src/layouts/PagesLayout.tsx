@@ -2,11 +2,11 @@ import { useSwipeable } from 'react-swipeable';
 
 import { useToast } from '@/components/ui/use-toast';
 import { pageLinks } from '@/constants/pageLinks';
-import { usePreventSwipeStore } from '@/store/preventSwipeStore';
-import { useMemo, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
+import { usePreventSwipeStore } from '@/store/preventSwipeStore';
 import { debounce } from 'lodash';
+import { useMemo } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function PagesLayout({
   children,
