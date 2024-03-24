@@ -82,14 +82,5 @@ export default function PagesLayout({
     preventScrollOnSwipe: true,
   });
 
-  return (
-    <div className='container flex flex-1 flex-col space-y-10 max-sm:py-10'>
-      <div
-        className='flex flex-1 flex-col items-center justify-center space-y-3'
-        {...handlers}
-      >
-        {children}
-      </div>
-    </div>
-  );
+  return <div {...handlers}>{children}</div>;
 }
