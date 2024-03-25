@@ -5,7 +5,7 @@ import { pageLinks } from '@/constants/pageLinks';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
 import { usePreventSwipeStore } from '@/store/preventSwipeStore';
 import { debounce } from 'lodash';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function PagesLayout({
@@ -79,6 +79,10 @@ export default function PagesLayout({
     delta: 50,
     preventScrollOnSwipe: true,
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return <div {...handlers}>{children}</div>;
 }

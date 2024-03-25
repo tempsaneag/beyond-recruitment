@@ -1,7 +1,7 @@
 export default function MainSection() {
   return (
     <div
-      className="flex h-full min-h-[calc(100vh-130px)] w-full 
+      className="flex size-full min-h-[calc(100vh-130px)] 
       flex-col justify-center 
       bg-[url('/images/shaking_hands.png')] bg-cover bg-center bg-no-repeat max-sm:py-10"
     >

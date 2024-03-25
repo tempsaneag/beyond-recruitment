@@ -1,3 +1,6 @@
+import TeamSection from '@/components/WhoWeAre/TeamSection';
+import WhoWeAreSection from '@/components/WhoWeAre/WhoWeAreSection';
+import { Separator } from '@/components/ui/separator';
 import PagesLayout from '@/layouts/PagesLayout';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
 import { motion } from 'framer-motion';
@@ -28,9 +31,16 @@ export default function WhoWeAre() {
       className='flex flex-1 flex-col'
     >
       <PagesLayout>
-        <div className='min-h-[calc(100vh-130px)]'>
-          <p className='text-4xl font-semibold'>Who we are</p>
-        </div>
+        <WhoWeAreSection />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className='container'
+        >
+          <Separator className='h-1' />
+        </motion.div>
+        <TeamSection />
       </PagesLayout>
     </motion.div>
   );
