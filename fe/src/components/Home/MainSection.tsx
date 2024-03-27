@@ -3,9 +3,9 @@ export default function MainSection() {
     <div
       className="flex size-full min-h-[calc(100vh-130px)] 
       flex-col justify-center 
-      bg-[url('/images/shaking_hands.png')] bg-cover bg-center bg-no-repeat max-sm:py-10"
+      bg-[url('/images/logo.png')] bg-cover bg-center bg-no-repeat max-sm:py-10"
     >
-      <div className='container text-white'>
+      <div className='container text-white backdrop-blur-md'>
         <div className='text-center'>
           <p className='text-6xl font-semibold'>Beyond Recruitment</p>
           <p className='text-2xl font-semibold'>
@@ -17,12 +17,12 @@ export default function MainSection() {
             At Beyond Recruitment, we go beyond traditional recruitment
             services, offering something innovative and exceptional.
           </p>
-          <p>
+          {/* <p>
             We specialize in delivering top-quality recruitment and talent
             research services, tailored to your unique requirements. We believe
             in building strong relationships with our clients, holding ourselves
             accountable, and always striving for excellence.
-          </p>
+          </p> */}
           <p>
             Moreover, we understand the importance of cost-effectiveness,
             ensuring that our services deliver great value without compromising
