@@ -71,7 +71,7 @@ export default function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(handleSubmit)}
-          className='mt-5 w-full max-w-96 space-y-5'
+          className='mt-5 w-full max-w-xl space-y-5 rounded-lg bg-gray-300 p-10'
         >
           <InputFormField
             name='name'
