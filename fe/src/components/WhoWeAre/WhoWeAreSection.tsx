@@ -12,7 +12,7 @@ export default function WhoWeAreSection() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <div className='flex-1 space-y-3 text-sm'>
+            <div className='flex-1 space-y-3 md:text-lg'>
               <p>
                 At Beyond Recruitment, we are a specialized tech recruitment and
                 executive research firm, well-connected in the market with IT

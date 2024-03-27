@@ -20,9 +20,8 @@ export default function TeamCard({
   return (
     <motion.div
       initial={{ x: imageSide === 'left' ? -1000 : 1000, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 0.2 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0.1 }}
       className={`flex w-full flex-col items-center gap-x-5 gap-y-10 ${imageSide === 'left' ? 'xl:flex-row' : 'xl:flex-row-reverse'}`}
     >
       <div className={`h-fit w-full max-w-xl ${imageContainerClassName ?? ''}`}>
