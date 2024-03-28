@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function ServicesSection() {
   const navigate = useNavigate();
@@ -16,7 +17,13 @@ export default function ServicesSection() {
 
   return (
     <div className='container flex justify-center py-10'>
-      <div className='w-full space-y-5'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className='w-full space-y-5'
+      >
         <div>
           <p className='text-center text-4xl'>Services</p>
           <Separator className='mx-auto h-[2px] max-w-lg' />
@@ -58,7 +65,7 @@ export default function ServicesSection() {
             Read More
           </Button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

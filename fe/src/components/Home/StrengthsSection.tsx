@@ -1,10 +1,17 @@
 import StrengthsCard from '@/components/Home/StrengthsCard';
 import { BadgeCheck, Gauge, UsersRound, Wallet } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function StrengthsSection() {
   return (
     <div className='px-10'>
-      <div className='flex flex-wrap justify-center gap-5 py-10'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className='flex flex-wrap justify-center gap-5 py-10'
+      >
         <StrengthsCard
           icon={<BadgeCheck className='size-10 group-hover:text-green-500' />}
           title='Quality'
@@ -31,7 +38,7 @@ export default function StrengthsSection() {
           recruitment agreements with full speed and responsibility, 
           ensuring prompt delivery of talent."
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

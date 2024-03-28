@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 export default function WhoWeAreSection() {
   return (
     <div className='flex size-full py-10'>
-      <div className='container '>
-        <p className='text-4xl font-semibold'>Who we are</p>
+      <div className='container'>
+        <p className='text-4xl font-semibold'>Who We Are</p>
         <div className='space-y-10'>
           <motion.div
             className='mt-5 flex flex-col items-center justify-between gap-10 xl:flex-row'
