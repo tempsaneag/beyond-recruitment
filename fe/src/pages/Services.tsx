@@ -1,3 +1,4 @@
+import WhyWorkingWithUsSection from '@/components/Services/WhyWorkingWithUsSection';
 import PagesLayout from '@/layouts/PagesLayout';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
 import { motion } from 'framer-motion';
@@ -28,7 +29,7 @@ export default function Services() {
     >
       <PagesLayout>
         <div className='min-h-[calc(100vh-130px)]'>
-          <p className='text-4xl font-semibold'>Services</p>
+          <WhyWorkingWithUsSection />
         </div>
       </PagesLayout>
     </motion.div>
