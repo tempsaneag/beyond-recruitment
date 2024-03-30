@@ -35,13 +35,19 @@ export default function Services() {
         <div className='container'>
           <Separator className='h-1' />
         </div>
-        <div className='flex flex-col items-center gap-5 py-10'>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className='flex flex-col items-center gap-5 py-10'
+        >
           <p className='text-4xl font-semibold'>Services</p>
           <div className='container flex flex-col justify-center gap-10 max-lg:items-center lg:flex-row'>
             <TalentAndMarketingService />
             <TalentResearchService />
           </div>
-        </div>
+        </motion.div>
       </PagesLayout>
     </motion.div>
   );
