@@ -14,15 +14,14 @@ export default function MainSection() {
       </div>
       <div className='container py-5'>
         <div className='mx-auto mt-5 max-w-2xl space-y-2'>
-          <p className='text-center text-xl'>
-            Trust Beyond Recruitment for innovative solutions that maximize your
-            team's potential. Specializing in top-quality recruitment and talent
-            research, tailored to your needs, we prioritize cost-effectiveness
-            without compromising quality.
-          </p>
-          <p className='mx-auto max-w-2xl pt-5 text-center text-2xl font-semibold'>
-            Our mission is clear: to fulfill our clients' needs with precision
-            and care.
+          <p className='text-justify text-xl'>
+            Hey there! At Beyond Recruitment, we're all about hooking you up
+            with the best tech talent and top execs out there. Our goal? To
+            supercharge your team's mojo with killer solutions. We're pros at
+            finding the perfect fit for your crew without breaking the bank.
+            Count on us to deliver results with precision, fast speed and
+            efficiency, ensuring your organization excels without compromising
+            quality.
           </p>
         </div>
       </div>

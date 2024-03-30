@@ -1,4 +1,7 @@
 import WhyWorkingWithUsSection from '@/components/Services/WhyWorkingWithUsSection';
+import TalentAndMarketingService from '@/components/WhoWeAre/TalentAndMarketingService';
+import TalentResearchService from '@/components/WhoWeAre/TalentResearchService';
+import { Separator } from '@/components/ui/separator';
 import PagesLayout from '@/layouts/PagesLayout';
 import { usePageTransitionStore } from '@/store/pageTransitionStore';
 import { motion } from 'framer-motion';
@@ -28,8 +31,16 @@ export default function Services() {
       exit={{ transform: getSwipeDirection().exit }}
     >
       <PagesLayout>
-        <div className='min-h-[calc(100vh-130px)]'>
-          <WhyWorkingWithUsSection />
+        <WhyWorkingWithUsSection />
+        <div className='container'>
+          <Separator className='h-1' />
+        </div>
+        <div className='flex flex-col items-center gap-5 py-10'>
+          <p className='text-4xl font-semibold'>Services</p>
+          <div className='container flex flex-col justify-center gap-10 max-lg:items-center lg:flex-row'>
+            <TalentAndMarketingService />
+            <TalentResearchService />
+          </div>
         </div>
       </PagesLayout>
     </motion.div>

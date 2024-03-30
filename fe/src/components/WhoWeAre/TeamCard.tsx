@@ -31,7 +31,7 @@ export default function TeamCard({
         className={`flex-1 space-y-3 px-4 md:text-xl ${textContainerClassName ?? ''}`}
       >
         <p className='font-bold'>{name}</p>
-        <p>{description}</p>
+        <p className='text-justify'>{description}</p>
       </div>
     </motion.div>
   );
