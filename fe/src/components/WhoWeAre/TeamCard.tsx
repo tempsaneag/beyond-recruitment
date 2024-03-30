@@ -7,6 +7,7 @@ interface TeamCardProps {
   imageContainerClassName?: string;
   textContainerClassName?: string;
   imageSide?: 'left' | 'right';
+  linkedinUrl: string;
 }
 
 export default function TeamCard({
@@ -16,6 +17,7 @@ export default function TeamCard({
   imageContainerClassName,
   textContainerClassName,
   imageSide = 'left',
+  linkedinUrl,
 }: TeamCardProps) {
   return (
     <motion.div
@@ -32,6 +34,11 @@ export default function TeamCard({
       >
         <p className='font-bold'>{name}</p>
         <p className='text-justify'>{description}</p>
+        <div className='size-7'>
+          <a href={linkedinUrl} target='_blank'>
+            <img src='/images/linkedin.png' />
+          </a>
+        </div>
       </div>
     </motion.div>
   );

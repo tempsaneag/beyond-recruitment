@@ -1,8 +1,12 @@
-import { Mail, Phone } from 'lucide-react';
+import { Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function HeaderContact() {
   return (
     <div className='container flex flex-wrap justify-end gap-x-5 gap-y-2 pt-2 text-sm'>
+      <a href='#' className='group flex items-center gap-2'>
+        <Linkedin className='size-5 transition-colors group-hover:text-blue-500' />
+        <span>LinkedIn</span>
+      </a>
       <a
         href='mailto:example@example.com'
         className='group flex items-center gap-2'
