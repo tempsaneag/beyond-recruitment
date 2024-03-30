@@ -1,4 +1,5 @@
 import AboutUs from '@/components/PrivacyPolicy/AboutUs';
+import Changes from '@/components/PrivacyPolicy/Changes';
 import DataCollection from '@/components/PrivacyPolicy/DataCollection';
 import DataHandling from '@/components/PrivacyPolicy/DataHandling';
 import DataSharing from '@/components/PrivacyPolicy/DataSharing';
@@ -26,16 +27,7 @@ export default function PrivacyPolicy() {
         <DataHandling />
         <DataSharing />
         <YourRights />
-        <div className='text-lg text-gray-700'>
-          <p>
-            For any inquiries or requests regarding your personal data, please
-            contact us at beyond-recruitment.net.
-          </p>
-          <p>
-            This Privacy Notice is effective as of… and may be updated
-            periodically.
-          </p>
-        </div>
+        <Changes />
       </div>
     </div>
   );
