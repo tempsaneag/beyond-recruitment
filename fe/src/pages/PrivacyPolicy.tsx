@@ -6,8 +6,13 @@ import DataSharing from '@/components/PrivacyPolicy/DataSharing';
 import DataUsage from '@/components/PrivacyPolicy/DataUsage';
 import PersonalDataFromTests from '@/components/PrivacyPolicy/PersonalDataFromTests';
 import YourRights from '@/components/PrivacyPolicy/YourRights';
+import { useEffect } from 'react';
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='container py-5 sm:py-10'>
       <div className='w-full space-y-10 md:w-10/12'>

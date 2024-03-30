@@ -5,11 +5,11 @@ export default function Changes() {
       <div className='text-lg text-gray-700'>
         <p>
           For any inquiries or requests regarding your personal data, please
-          contact us at beyond-recruitment.net.
-        </p>
-        <p>
-          This Privacy Notice is effective as of… and may be updated
-          periodically.
+          contact us at{' '}
+          <a href='mailto:info@beyond-recruitment.net' className='underline'>
+            info@beyond-recruitment.net
+          </a>
+          .
         </p>
       </div>
     </div>

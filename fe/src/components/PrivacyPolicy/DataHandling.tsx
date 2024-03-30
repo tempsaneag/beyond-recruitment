@@ -9,12 +9,6 @@ export default function DataHandling() {
         of Moldova.
       </p>
       <p className='text-lg text-gray-700'>
-        Transfers of personal data to EEA and non-EEA countries adhere to GDPR
-        standards, ensuring an adequate level of protection. Transfers outside
-        the EEA are subject to binding corporate rules or require explicit
-        consent.
-      </p>
-      <p className='text-lg text-gray-700'>
         As a recruitment business and recruitment agency, we introduce
         candidates to clients for permanent employment, temporary worker
         placements or independent professional contracts. The exchange of
