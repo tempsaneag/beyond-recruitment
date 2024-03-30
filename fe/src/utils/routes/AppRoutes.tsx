@@ -1,11 +1,12 @@
 import Layout from '@/layouts/Layout';
 import Home from '@/pages/Home';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import WhoWeAre from '@/pages/WhoWeAre';
 import Services from '@/pages/Services';
 import Contact from '@/pages/Contact';
 import { AnimatePresence } from 'framer-motion';
+import PrivacyPolicy from '@/pages/PrivacyPolicy';
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -18,6 +19,8 @@ export default function AppRoutes() {
           <Route path='/who-we-are' element={<WhoWeAre />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='*' element={<Navigate replace to='/' />} />
         </Route>
       </Routes>
     </AnimatePresence>

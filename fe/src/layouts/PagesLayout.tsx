@@ -7,6 +7,7 @@ import { usePreventSwipeStore } from '@/store/preventSwipeStore';
 import { debounce } from 'lodash';
 import { useEffect, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Footer from '@/components/Footer';
 
 export default function PagesLayout({
   children,
@@ -84,5 +85,10 @@ export default function PagesLayout({
     window.scrollTo(0, 0);
   }, []);
 
-  return <div {...handlers}>{children}</div>;
+  return (
+    <div {...handlers}>
+      {children}
+      <Footer />
+    </div>
+  );
 }

@@ -14,7 +14,7 @@ export default function TalentAndMarketingService() {
       </CardHeader>
       <CardContent>
         <p className='text-2xl font-semibold'>How it works</p>
-        <ul className='list mt-2 list-inside list-disc space-y-2'>
+        <ul className='mt-2 list-outside list-disc space-y-2 pl-5'>
           <li>
             In-depth analysis of the talent landscape within specific industries
             or sectors.

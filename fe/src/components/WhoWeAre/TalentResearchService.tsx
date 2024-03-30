@@ -13,7 +13,7 @@ export default function TalentResearchService() {
       </CardHeader>
       <CardContent>
         <p className='text-2xl font-semibold'>How it works</p>
-        <ul className='list mt-2 list-inside list-disc space-y-2'>
+        <ul className='mt-2 list-outside list-disc space-y-2 pl-5'>
           <li>
             Comprehensive research to identify and assess potential candidates
             for specific roles or projects.
