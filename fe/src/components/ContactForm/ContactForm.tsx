@@ -14,6 +14,7 @@ import { useToast } from '@/components/ui/use-toast';
 import { usePreventSwipeStore } from '@/store/preventSwipeStore';
 import { useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
+import { AxiosError } from 'axios';
 
 export default function ContactForm() {
   const setPreventSwipe = usePreventSwipeStore(
@@ -35,18 +36,21 @@ export default function ContactForm() {
   const mutation = useMutation({
     mutationFn: async (data: ContactFormSchema) =>
       await axiosInstance.post(`/send-email`, data),
-    onSuccess: () => {
+    onSuccess: (response) => {
       toast({
         title: 'Message sent',
-        description: 'Your message has been sent successfully',
+        description: response?.data || 'Email sent successfully',
         className: 'bg-green-500 text-white',
       });
       form.reset();
     },
     onError: (error) => {
+      const err = error as AxiosError;
       toast({
         title: 'Error',
-        description: error.message,
+        description:
+          (err.response?.data as string) ||
+          'An error occurred while sending the email',
         className: 'bg-red-500 text-white',
       });
     },
