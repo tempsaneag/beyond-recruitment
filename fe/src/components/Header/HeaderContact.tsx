@@ -8,11 +8,11 @@ export default function HeaderContact() {
         <span>LinkedIn</span>
       </a>
       <a
-        href='mailto:example@example.com'
+        href='mailto:connect@beyond-recruitment.net'
         className='group flex items-center gap-2'
       >
         <Mail className='size-5 transition-colors duration-300 group-hover:text-red-500' />
-        <span>example@example.com</span>
+        <span>connect@beyond-recruitment.net</span>
       </a>
       <a href='tel:+1234567890' className='group flex items-center gap-2'>
         <Phone className='size-5 transition-colors duration-300 group-hover:text-blue-500' />

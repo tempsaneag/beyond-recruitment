@@ -6,8 +6,8 @@ export default function Changes() {
         <p>
           For any inquiries or requests regarding your personal data, please
           contact us at{' '}
-          <a href='mailto:info@beyond-recruitment.net' className='underline'>
-            info@beyond-recruitment.net
+          <a href='mailto:connect@beyond-recruitment.net' className='underline'>
+            connect@beyond-recruitment.net
           </a>
           .
         </p>
