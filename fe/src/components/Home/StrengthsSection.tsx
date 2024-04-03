@@ -9,7 +9,7 @@ export default function StrengthsSection() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.4 }}
         className='flex flex-wrap justify-center gap-5 py-10'
       >
         <StrengthsCard

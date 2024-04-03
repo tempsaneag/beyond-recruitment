@@ -1,5 +1,4 @@
 import HeaderContact from '@/components/Header/HeaderContact';
-import HeaderLogo from '@/components/Header/HeaderLogo';
 import HeaderNavigationLinks from '@/components/Header/HeaderNavigationLinks';
 
 export default function Header() {
@@ -8,8 +7,7 @@ export default function Header() {
       <div className='border-b pb-1'>
         <HeaderContact />
       </div>
-      <div className='container flex h-full w-full items-center justify-between pb-2'>
-        <HeaderLogo />
+      <div className='container flex h-full w-full items-center justify-end py-5'>
         <div className='flex items-center gap-5'>
           <HeaderNavigationLinks />
         </div>
