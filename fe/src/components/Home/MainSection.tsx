@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 export default function MainSection() {
   return (
     <>
-      <div className='h-fit bg-black py-10'>
+      <div className='h-fit bg-black py-24'>
         <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
           src='/images/logo.png'
-          className='mx-auto h-full max-h-[350px]'
+          className='mx-auto h-full max-h-[250px]'
         />
       </div>
       <div className='container py-5'>
