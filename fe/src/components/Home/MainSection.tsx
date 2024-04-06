@@ -1,17 +1,9 @@
-import { motion } from 'framer-motion';
+import ImageCarousel from '@/components/Home/ImageCarousel';
 
 export default function MainSection() {
   return (
     <>
-      <div className='h-fit bg-black py-24'>
-        <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          src='/images/logo.png'
-          className='mx-auto h-full max-h-[250px]'
-        />
-      </div>
+      <ImageCarousel />
       <div className='container py-5'>
         <div className='mx-auto mt-5 max-w-2xl space-y-2'>
           <p className='text-justify text-xl'>
