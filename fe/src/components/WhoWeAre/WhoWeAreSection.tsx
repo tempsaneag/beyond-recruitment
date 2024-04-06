@@ -47,7 +47,7 @@ export default function WhoWeAreSection() {
             </div>
             <div className='h-fit w-full max-w-xl'>
               <img
-                src='/images/photo_2024-03-25_21-30-31.jpg'
+                src='/images/photo_2024-04-06_21-19-41.jpg'
                 className='size-full'
               />
             </div>
