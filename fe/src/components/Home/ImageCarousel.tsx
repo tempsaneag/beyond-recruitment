@@ -10,22 +10,22 @@ export default function ImageCarousel() {
   const slides = [
     {
       index: 0,
+      image: '/images/logo.png',
+    },
+    {
+      index: 1,
       image: '/images/1-min.jpg',
       text: 'Quality Recruitment & Talent Research',
     },
     {
-      index: 1,
+      index: 2,
       image: '/images/2-min.jpg',
       text: 'Personalized & Budget-Friendly Solutions',
     },
     {
-      index: 2,
+      index: 3,
       image: '/images/3-min.jpg',
       text: 'Prompt Delivery of Talent',
-    },
-    {
-      index: 3,
-      image: '/images/logo.png',
     },
   ];
 
@@ -50,8 +50,8 @@ export default function ImageCarousel() {
                 className={`relative flex h-full max-h-[500px] w-full items-center bg-black`}
               >
                 {slide?.text && (
-                  <div className='absolute inset-0 flex h-full w-full items-center justify-center'>
-                    <span className='rounded-md bg-white/70 p-4 text-6xl font-semibold text-gray-700'>
+                  <div className='absolute inset-0 flex h-full w-full items-end justify-end md:items-center md:justify-center'>
+                    <span className='rounded-md bg-gray-700/70 p-4 text-center text-3xl font-semibold text-white md:text-6xl'>
                       {slide.text}
                     </span>
                   </div>
