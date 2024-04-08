@@ -7,7 +7,7 @@ export default function WhoWeAreSection() {
         <p className='text-4xl font-semibold'>Who We Are</p>
         <div className='space-y-10'>
           <motion.div
-            className='mt-5 flex flex-col items-center justify-between gap-10 xl:flex-row'
+            className='mt-5 flex flex-col items-center justify-between gap-10 xl:flex-row xl:items-start'
             initial={{ x: -1000, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -45,7 +45,7 @@ export default function WhoWeAreSection() {
                 market.
               </p>
             </div>
-            <div className='h-fit w-full max-w-xl'>
+            <div className='flex h-fit w-full max-w-xl'>
               <img
                 src='/images/photo_2024-04-06_21-19-41.jpg'
                 className='size-full'
