@@ -7,13 +7,15 @@ export default function MainSection() {
       <div className='container py-5'>
         <div className='mx-auto mt-5 max-w-2xl space-y-2'>
           <p className='text-justify text-xl'>
-            Hey there! At Beyond Recruitment, we're all about hooking you up
-            with the best tech talent and top execs out there. Our goal? To
-            supercharge your team's mojo with killer solutions. We're pros at
-            finding the perfect fit for your crew without breaking the bank.
-            Count on us to deliver results with precision, fast speed and
-            efficiency, ensuring your organization excels without compromising
-            quality.
+            Hello there! At Beyond Recruitment Partners, our mission is to
+            connect you with top-tier tech talent and executive experts. Our
+            goal? To supercharge your team's performance with the best solutions
+            available. We specialize in providing skilled professionals who
+            seamlessly integrate into your projects, ensuring a smooth and
+            successful collaboration. Rest assured, we prioritize finding the
+            perfect fit for your crew without exceeding your budget. Count on us
+            to deliver results with precision, speed, and efficiency, empowering
+            your organization to excel without compromising quality.
           </p>
         </div>
       </div>

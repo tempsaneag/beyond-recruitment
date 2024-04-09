@@ -19,10 +19,11 @@ export default function PrivacyPolicy() {
         <p className='text-4xl font-semibold'>Privacy Policy</p>
         <div className='space-y-5'>
           <p className='text-lg text-gray-700'>
-            At Beyond Recruitment, safeguarding your privacy and protecting your
-            personal data is of paramount importance to us. This Privacy Notice
-            outlines how we collect and utilize your personal information in
-            compliance with the General Data Protection Regulation (GDPR).
+            At Beyond Recruitment Partners, safeguarding your privacy and
+            protecting your personal data is of paramount importance to us. This
+            Privacy Notice outlines how we collect and utilize your personal
+            information in compliance with the General Data Protection
+            Regulation (GDPR).
           </p>
         </div>
         <AboutUs />

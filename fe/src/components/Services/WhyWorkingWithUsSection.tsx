@@ -9,7 +9,7 @@ export default function WhyWorkingWithUsSection() {
           <div className='flex flex-1 flex-col gap-4'>
             <WhyWorkingWithUsListItems
               title='Industry Insights: '
-              description='With our specialized focus on tech recruitment and executive research, Beyond Recruitment offers in-depth industry knowledge and insights. Our extensive network includes thousands of Software Engineers and Management Candidates, ensuring we connect you with the best talent available.'
+              description='With our specialized focus on tech recruitment and executive research, Beyond Recruitment Partners offers in-depth industry knowledge and insights. Our extensive network includes thousands of Software Engineers and Management Candidates, ensuring we connect you with the best talent available.'
               delay={0.5}
             />
             <WhyWorkingWithUsListItems
@@ -24,12 +24,12 @@ export default function WhyWorkingWithUsSection() {
             />
             <WhyWorkingWithUsListItems
               title='Geography Knowledge: '
-              description='Beyond Recruitment possesses strong knowledge and expertise in the geographical areas we serve, including the EMEA region, the Nordics, and specific regions in Eastern Europe.'
+              description='Beyond Recruitment Partners possesses strong knowledge and expertise in the geographical areas we serve, including the EMEA region, the Nordics, and specific regions in Eastern Europe.'
               delay={2}
             />
             <WhyWorkingWithUsListItems
               title='Cost-effectiveness: '
-              description="This is a core principle that guides our approach at Beyond Recruitment. We're committed to delivering high-quality services at competitive prices, ensuring that our clients receive maximum value for their investment."
+              description="This is a core principle that guides our approach at Beyond Recruitment Partners. We're committed to delivering high-quality services at competitive prices, ensuring that our clients receive maximum value for their investment."
               delay={2.5}
             />
             <WhyWorkingWithUsListItems

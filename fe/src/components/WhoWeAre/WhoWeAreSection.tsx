@@ -14,16 +14,16 @@ export default function WhoWeAreSection() {
           >
             <div className='flex-1 space-y-3 text-justify md:text-lg'>
               <p>
-                At Beyond Recruitment, we are a specialized tech recruitment and
-                executive research firm, well-connected in the market with IT
-                talent, software engineers, and management candidates. Our
-                primary focus lies in tech talent recruitment and executive
-                research, with a specific focus on the EMEA region, including
-                the Nordics and select regions in Eastern Europe. We excel in
-                assisting our clients in identifying and acquiring the right
-                talent for their organizations, guiding them through every stage
-                of the recruitment process to strengthen their delivery and
-                achieve their business objectives.
+                At Beyond Recruitment Partners, we are a specialized tech
+                recruitment and executive research firm, well-connected in the
+                market with IT talent, software engineers, and management
+                candidates. Our primary focus lies in tech talent recruitment
+                and executive research, with a specific focus on the EMEA
+                region, including the Nordics and select regions in Eastern
+                Europe. We excel in assisting our clients in identifying and
+                acquiring the right talent for their organizations, guiding them
+                through every stage of the recruitment process to strengthen
+                their delivery and achieve their business objectives.
               </p>
               <p>
                 Our team consists of experienced Recruitment Consultants and
@@ -39,10 +39,10 @@ export default function WhoWeAreSection() {
                 building long-term relationships based on accountability and a
                 commitment to excellence. We bring to the table cost-effective
                 solutions that provide exceptional value without sacrificing
-                quality. At Beyond Recruitment, we're dedicated to going beyond
-                your expectations, driving success for our clients, and shaping
-                the future of talent acquisition in today's ever-changing global
-                market.
+                quality. At Beyond Recruitment Partners, we're dedicated to
+                going beyond your expectations, driving success for our clients,
+                and shaping the future of talent acquisition in today's
+                ever-changing global market.
               </p>
             </div>
             <div className='flex h-fit w-full max-w-xl'>

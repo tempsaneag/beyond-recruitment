@@ -28,7 +28,7 @@ export default function StrengthsSection() {
         <StrengthsCard
           icon={<Wallet className='size-10 group-hover:text-yellow-600' />}
           title='Cost-effectiveness'
-          description='At Beyond Recruitment we bring our ability to deliver 
+          description='At Beyond Recruitment Partners we bring our ability to deliver 
           value by providing cost-effective solutions without compromising on quality.'
         />
         <StrengthsCard
