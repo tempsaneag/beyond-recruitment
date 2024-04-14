@@ -18,9 +18,9 @@ export default function HeaderContact() {
         <Mail className='size-5 transition-colors duration-300 group-hover:text-red-500' />
         <span>connect@beyond-recruitment.net</span>
       </a>
-      <a href='tel:+1234567890' className='group flex items-center gap-2'>
+      <a href='tel:+37368249608' className='group flex items-center gap-2'>
         <Phone className='size-5 transition-colors duration-300 group-hover:text-blue-500' />
-        <span>+1234567890</span>
+        <span>+37368249608</span>
       </a>
     </div>
   );

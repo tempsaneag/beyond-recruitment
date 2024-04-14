@@ -24,7 +24,7 @@ export default function WhyWorkingWithUsSection() {
             />
             <WhyWorkingWithUsListItems
               title='Geography Knowledge: '
-              description='Beyond Recruitment Partners possesses strong knowledge and expertise in the geographical areas we serve, including the EMEA region, the Nordics, and specific regions in Eastern Europe.'
+              description='Beyond Recruitment Partners possesses strong knowledge and expertise in the geographical areas we serve, including the USA, EMEA and specific regions in Eastern Europe.'
               delay={2}
             />
             <WhyWorkingWithUsListItems
