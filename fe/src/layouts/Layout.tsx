@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom';
 
 import Header from '@/components/Header/Header';
+import SwipeHint from '@/components/SwipeHint';
+import { MobileView } from 'react-device-detect';
 
 export default function Layout() {
   return (
@@ -9,6 +11,9 @@ export default function Layout() {
       <div className='w-full overflow-x-hidden'>
         <Outlet />
       </div>
+      <MobileView>
+        <SwipeHint />
+      </MobileView>
     </div>
   );
 }

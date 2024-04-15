@@ -8,6 +8,7 @@ import { debounce } from 'lodash';
 import { useEffect, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Footer from '@/components/Footer';
+import { useSwipeHintStore } from '@/store/swipeHintStore';
 
 export default function PagesLayout({
   children,
@@ -19,6 +20,7 @@ export default function PagesLayout({
   const preventSwipe = usePreventSwipeStore((state) => state.preventSwipe);
   const { setSwipeDirection } = usePageTransitionStore((state) => state);
   const { toast } = useToast();
+  const setShowSwipeHint = useSwipeHintStore((state) => state.setShowSwipeHint);
 
   const checkPreventSwipe = () => {
     if (preventSwipe) {
@@ -38,6 +40,7 @@ export default function PagesLayout({
       return;
     }
     setSwipeDirection('right');
+    setShowSwipeHint(false);
     const currentIndex = pageLinks.findIndex(
       (link) => link.path === location.pathname
     );
@@ -54,6 +57,7 @@ export default function PagesLayout({
       return;
     }
     setSwipeDirection('left');
+    setShowSwipeHint(false);
     const currentIndex = pageLinks.findIndex(
       (link) => link.path === location.pathname
     );
@@ -77,6 +81,12 @@ export default function PagesLayout({
   const handlers = useSwipeable({
     onSwipedLeft: debouncedSwipeLeft,
     onSwipedRight: debouncedSwipeRight,
+    onSwipedUp: () => {
+      setShowSwipeHint(false);
+    },
+    onSwipedDown: () => {
+      setShowSwipeHint(false);
+    },
     delta: 50,
     preventScrollOnSwipe: true,
   });
