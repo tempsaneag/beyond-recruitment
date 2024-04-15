@@ -30,7 +30,7 @@ export default function TeamCard({
         <img src={image} alt={name} className='size-full' />
       </div>
       <div
-        className={`flex-1 space-y-3 px-4 md:text-xl ${textContainerClassName ?? ''}`}
+        className={`flex-1 space-y-3 px-4 md:text-lg ${textContainerClassName ?? ''}`}
       >
         <p className='font-bold'>{name}</p>
         <p className='text-justify'>{description}</p>
