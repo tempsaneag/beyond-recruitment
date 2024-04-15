@@ -14,17 +14,17 @@ export default function ImageCarousel() {
     },
     {
       index: 1,
-      image: '/images/1-min.jpg',
+      image: '/images/1_50.jpg',
       text: 'Quality Recruitment & Talent Research',
     },
     {
       index: 2,
-      image: '/images/2-min.jpg',
+      image: '/images/2_50.jpg',
       text: 'Personalized & Budget-Friendly Solutions',
     },
     {
       index: 3,
-      image: '/images/3-min.jpg',
+      image: '/images/3_50.jpg',
       text: 'Prompt Delivery of Talent',
     },
   ];
