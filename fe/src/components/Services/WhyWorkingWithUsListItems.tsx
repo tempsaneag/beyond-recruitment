@@ -29,7 +29,7 @@ export default function WhyWorkingWithUsListItems({
       </div>
       <p>
         <span className='text-lg font-semibold'>{title}</span>
-        {description}
+        <span className='text-lg'>{description}</span>
       </p>
     </motion.div>
   );

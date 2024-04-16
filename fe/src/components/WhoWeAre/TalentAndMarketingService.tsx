@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 export default function TalentAndMarketingService() {
   return (
-    <Card className='w-full bg-gray-100 sm:w-10/12 lg:w-5/12'>
+    <Card className='w-full bg-gray-100 text-lg sm:w-10/12 lg:w-5/12'>
       <CardHeader>
         <p className='text-2xl font-semibold'>Talent and Market Mapping</p>
         <p>

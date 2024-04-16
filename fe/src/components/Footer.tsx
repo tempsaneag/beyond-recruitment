@@ -16,7 +16,7 @@ export default function Footer() {
           className='h-full w-[1px] bg-gray-600'
         />
       </div>
-      <span>2024 © Beyond Recruitment partners</span>
+      <span>2024 © Beyond Recruitment Partners</span>
     </div>
   );
 }
