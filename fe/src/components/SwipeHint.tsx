@@ -11,6 +11,7 @@ export default function SwipeHint() {
       <div className='flex items-center gap-3 rounded-lg bg-gray-300 p-3'>
         <motion.img
           src='/images/swipe.png'
+          className='size-10'
           alt='swipe'
           initial={{ x: -5 }}
           animate={{ x: 5 }}
