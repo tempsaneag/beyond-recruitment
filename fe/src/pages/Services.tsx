@@ -39,7 +39,7 @@ export default function Services() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           className='flex flex-col items-center gap-5 py-10'
         >
           <p className='text-4xl font-semibold'>Services</p>

@@ -9,7 +9,6 @@ export default function Changes() {
           <a href='mailto:connect@beyond-recruitment.net' className='underline'>
             connect@beyond-recruitment.net
           </a>
-          .
         </p>
       </div>
     </div>
